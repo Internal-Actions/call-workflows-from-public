@@ -1,0 +1,7 @@
+name: hello
+on: [workflow_dispatch, push]
+jobs:
+  call-workflow-passing-data:
+    uses: /Internal-Actions/public-reusable-workflow/.github/workflows/called_workflow.yaml@main
+    with:
+      username: mona
